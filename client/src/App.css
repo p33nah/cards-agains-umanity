@@ -63,24 +63,6 @@ a {
   height: 100vh;
 }
 
-/* Game.js Background */
-.backgroundColorR {
-  background-image: url("./assets/backgrounds/bgR.png");
-}
-
-.backgroundColorG {
-  background-image: url("./assets/backgrounds/bgG.png");
-}
-
-.backgroundColorB {
-  background-image: url("./assets/backgrounds/bgB.png");
-}
-
-.backgroundColorY {
-  background-image: url("./assets/backgrounds/bgY.png");
-}
-
-/* UNO Cards */
 .Card {
   width: 6rem;
   margin: 2px;
@@ -111,53 +93,6 @@ a {
 .topInfoText {
   font-size: 2rem;
   margin: 0;
-}
-
-/* Player Decks */
-.player1Deck {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.player1Deck > img {
-  transition: transform 350ms;
-}
-
-.player1Deck > img:hover {
-  transform: scale(1.08);
-  opacity: 1;
-}
-
-.player2Deck {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-
-.player2Deck > img {
-  transition: transform 350ms;
-}
-
-.player2Deck > img:hover {
-  transform: scale(1.08);
-  opacity: 1;
-}
-
-.playerDeckText {
-  font-size: 2rem;
-  margin: 0 20px;
-}
-
-/* Game.js Middle Row */
-.middleInfo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.middleInfo > button {
-  align-self: center;
 }
 
 /* Game Buttons */
