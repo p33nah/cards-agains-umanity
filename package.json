@@ -1,5 +1,5 @@
 {
-  "name": "uno-online",
+  "name": "cards-against-humanity",
   "version": "1.0.0",
   "description": "Online multiplayer card game",
   "main": "server.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mizanxali/uno-online.git"
+    "url": "git+https://github.com/p33nah/cards-against-humanity.git"
   },
   "author": "Mizan Ali",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mizanxali/uno-online/issues"
+    "url": "https://github.com/p33nah/cards-against-humanity"
   },
-  "homepage": "https://github.com/mizanxali/uno-online#readme",
+  "homepage": "https://github.com/p33nah/cards-against-humanity",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
