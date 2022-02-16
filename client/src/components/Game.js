@@ -4,7 +4,7 @@ import queryString from 'query-string'
 
 
 let socket
-const ENDPOINT = 'http://localhost:5000'
+const ENDPOINT = 'https://cards-against-umanity.herokuapp.com/'
 
 const Game = (props) => {
   const data = queryString.parse(props.location.search)
