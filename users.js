@@ -1,9 +1,6 @@
  const users = []
 
  const addUser = ({id, name, room}) => {
-    const numberOfUsersInRoom = users.filter(user => user.room === room).length
-    if(numberOfUsersInRoom === 2)
-    return { error: 'Room full' }
 
     const newUser = { id, name, room }
     users.push(newUser)
@@ -24,5 +21,6 @@ const getUser = id => {
 const getUsersInRoom = room => {
     return users.filter(user => user.room === room)
 }
+
 
 module.exports = { addUser, removeUser, getUser, getUsersInRoom }
