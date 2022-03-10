@@ -27,10 +27,10 @@ const Homepage = () => {
             
                 <div className='homepage_buttons'>
                     <div className='homepage_join'>
-                        <Link to={(playerName.length > 3 && roomCode) ? `/play?roomCode=${roomCode}&userName=${playerName}` : '/'}><button className="game_button green">JOIN GAME</button></Link>
+                        <Link to={(playerName.length > 3 && roomCode) ? `/play?roomCode=${roomCode}&userName=${playerName}` : '/'}><button className="game_button">JOIN GAME</button></Link>
                     </div>
                     <div className='homepage_create'>
-                        <Link to={playerName.length > 3 ? `/play?roomCode=${randomCodeGenerator(5)}&userName=${playerName}` : '/'}><button className="game_button orange">CREATE GAME</button></Link>
+                        <Link to={playerName.length > 3 ? `/play?roomCode=${randomCodeGenerator(5)}&userName=${playerName}` : '/'}><button className="game_button">CREATE GAME</button></Link>
                     </div>
                 </div>
             </div>

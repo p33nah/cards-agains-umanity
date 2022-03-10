@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Carter+One");
 
+@font-face {
+  font-family: BMW;
+  src: local(BMW), url("./fonts/BMW\ Helvetica\ 75\ Bold.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +12,7 @@
 
 body {
   margin: 0;
-  font-family: "Carter One", sans-serif;
+  font-family: "BMW", sans-serif;
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import io from 'socket.io-client'
 import queryString from 'query-string'
-import Chat from '../components/Chat/Chat'
 import questions from '../utils/Questions'
 import answers from '../utils/Answers'
 import {randomInArray} from '../utils/random'
@@ -224,11 +223,9 @@ const Game = (props) => {
  
   return (
     <div className={`game`}>
-      <h2 onClick={() => copyToClipboard(data.roomCode)} >Room: {data.roomCode}</h2>
-      {/*<img src='copy.png' alt='copy' onClick={copyToClipboard}/>*/}
+      {!gameStarted && <h3 onClick={() => copyToClipboard(data.roomCode)} >Room: {data.roomCode}</h3>}
       <Players users={users} turn={turn} score={score}/>
-      {/*socket && <Chat socket={socket} currentUser={currentUser}/>*/}
-      { roomCreator && <button onClick={startGame}>Start game</button>}
+      { roomCreator && <button className="start_btn" onClick={startGame}>Start game</button>}
       <div className="board">
       {currentQuestion && <Card type='question' content={currentQuestion} />}
       </div>
@@ -245,9 +242,7 @@ const Game = (props) => {
           )})}
       </div>
       {showConfirmButton && (
-        <div className="confirm_btn">
-          <button onClick={confirmSelection}>Confirm Selection</button>
-        </div>
+        <button className="confirm_btn" onClick={confirmSelection}>Confirm Selection</button>
       )}
       {everyPlayerHasConfirmed && turn === currentUser && (
         <div className="final_answers">
@@ -262,8 +257,8 @@ const Game = (props) => {
                 )
               })}
             </div>
-          )
-        })}
+            )
+          })}
         </div> 
       )}
     </div>

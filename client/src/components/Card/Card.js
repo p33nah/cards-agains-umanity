@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const Card = ({type, content, selectCard, selected, pick}) => {
 
@@ -18,7 +18,7 @@ const Card = ({type, content, selectCard, selected, pick}) => {
   const style = {
     backgroundColor: `${type === 'question' ? 'black' : 'white'}`,
     color: `${type === 'question' ? 'white' : 'black'}`,
-    border: `${selected && selected.includes(content) ? '5px solid black' : 'none'}`
+    border: `${selected && selected.includes(content) ? '5px solid black' : 'none'}`,
   }
 
 
